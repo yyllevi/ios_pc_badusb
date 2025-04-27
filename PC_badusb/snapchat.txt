@@ -2,6 +2,6 @@ WINDOWS r
 DELAY 1 
 STRING chrome.exe
 ENTER
-DELAY 100
+DELAY 64
 STRING https://snapchat.com/add/levictf
 ENTER
