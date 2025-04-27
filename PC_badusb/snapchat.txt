@@ -1,6 +1,6 @@
 WINDOWS r 
 DELAY 1 
-STRING chrome.exe
+STRING msedge.exe
 ENTER
 DELAY 64
 STRING https://snapchat.com/add/levictf
