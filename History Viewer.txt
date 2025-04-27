@@ -1,3 +1,4 @@
+REM only works for safari,
 GUI-SHIFT n
 DELAY 900
 GUI-SHIFT l
