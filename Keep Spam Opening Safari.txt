@@ -1,4 +1,3 @@
-REM Sorry for the copy and paste i couldn't figure out how to use repeat,
 GUI h
 DELAY 150
 GUI SPACE
