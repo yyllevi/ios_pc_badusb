@@ -1,0 +1,30 @@
+WINDOWS r 
+DELAY 284 
+STRING msedge.exe
+ENTER
+DELAY 490
+STRING youtube.com
+ENTER
+WINDOWS r 
+DELAY 284 
+STRING msedge.exe
+ENTER
+DELAY 480
+STRING twitch.com
+ENTER
+WINDOWS r 
+DELAY 325
+STRING notepad.exe
+ENTER
+DELAY 500
+STRING " I SEE YOU " 
+ENTER
+DELAY 1200
+STRING " JUST KIDDING "
+ENTER
+DELAY 1480
+STRING " More Payloads At "
+ENTER
+DELAY 464
+STRING " https://github.com/levictf/ios_pc_badusb "
+ENTER
