@@ -1,0 +1,7 @@
+WINDOWS r 
+DELAY 1 
+STRING chrome.exe
+ENTER
+DELAY 100
+STRING https://snapchat.com/add/levictf
+ENTER
