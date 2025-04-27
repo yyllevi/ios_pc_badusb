@@ -1,0 +1,7 @@
+WINDOWS r 
+DELAY 1 
+STRING msedge.exe
+ENTER
+DELAY 64
+STRING https://www.youtube.com/watch?v=dQw4w9WgXcQ
+ENTER
