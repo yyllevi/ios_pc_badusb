@@ -1,4 +1,3 @@
-REM slides through the device and checks everything
 GUI RIGHT ARROW
 DELAY 1100
 GUI RIGHT ARROW
@@ -65,7 +64,6 @@ RIGHT ARROW
 ENTER
 GUI h
 GUI h
-REM slides through the device and checks everything
 
 
 
