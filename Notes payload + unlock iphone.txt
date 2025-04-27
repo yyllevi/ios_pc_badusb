@@ -1,4 +1,4 @@
-REM Notes Payload, Remove the 4 0000 with you're real phone password android or iphone
+REM Notes Payload, Remove the 4 0000 with you're real iphone password
 GUI SPACE 
 DELAY 1
 ENTER
