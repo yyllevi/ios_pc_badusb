@@ -1,0 +1,6 @@
+REM This Deletes 100 Tabs
+GUI 1
+DELAY 
+GUI w
+GUI w
+REPEAT 100
