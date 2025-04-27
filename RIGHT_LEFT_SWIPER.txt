@@ -64,9 +64,3 @@ RIGHT ARROW
 ENTER
 GUI h
 GUI h
-
-
-
-
-
-
