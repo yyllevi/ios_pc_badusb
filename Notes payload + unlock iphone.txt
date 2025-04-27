@@ -1,0 +1,18 @@
+REM Notes Payload, Remove the 4 0000 with you're real phone password android or iphone
+GUI SPACE 
+DELAY 1
+ENTER
+STRING 0000
+ENTER
+GUI h
+DELAY 150
+GUI SPACE
+DELAY 450
+STRING Notes
+DELAY 800
+ENTER
+DELAY 1200
+GUI t
+DELAY 500
+STRING "PWN by levictf"
+ENTER
