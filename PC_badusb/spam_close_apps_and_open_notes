@@ -114,8 +114,8 @@ WINDOWS r
 DELAY 325
 STRING notepad.exe
 ENTER
-DELAY 500
-STRING " Sorry Mr "
+DELAY 785
+STRING " why so angus ?
 ENTER
 DELAY 1200
-STRING " GoodBye " 
+STRING "
