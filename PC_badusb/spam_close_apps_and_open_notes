@@ -115,7 +115,5 @@ DELAY 325
 STRING notepad.exe
 ENTER
 DELAY 785
-STRING " why so angus ?
+STRING " why so angus ? "
 ENTER
-DELAY 1200
-STRING "
