@@ -4,9 +4,9 @@ DELAY 84
 STRING notepad.exe
 ENTER
 DELAY 990 
-STRING " hello there, ima just check your history if you don't mind (^‿‿^) "
+STRING " hello there, ima just check your history if you don't mind (^__^) "
 ENTER
-DELAY 850
+DELAY 1250
 WINDOWS r
 DELAY 84
 STRING chrome.exe
