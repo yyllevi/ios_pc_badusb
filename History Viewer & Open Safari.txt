@@ -1,4 +1,10 @@
 REM only works for safari,
+GUI h
+DELAY 150
+GUI SPACE
+DELAY 450
+STRING safari
+ENTER
 GUI-SHIFT n
 DELAY 900
 GUI-SHIFT l
