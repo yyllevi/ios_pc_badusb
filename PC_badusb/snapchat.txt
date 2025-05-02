@@ -1,7 +1,0 @@
-WINDOWS r 
-DELAY 1 
-STRING msedge.exe
-ENTER
-DELAY 64
-STRING https://snapchat.com/add/levictf
-ENTER
