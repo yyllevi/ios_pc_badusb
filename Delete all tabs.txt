@@ -1,4 +1,4 @@
-REM This Deletes 100 Tabs
+REM not made by qqbiskit
 GUI 1
 DELAY 
 GUI w
