@@ -1,4 +1,3 @@
-REM not made by qqbiskit
 GUI 1
 DELAY 
 GUI w
