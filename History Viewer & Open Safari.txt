@@ -1,4 +1,3 @@
-REM only works for safari,
 GUI h
 DELAY 150
 GUI SPACE
