@@ -8,5 +8,5 @@ ENTER
 DELAY 1200
 GUI t
 DELAY 500
-STRING "PWN by qqbiskit"
+STRING "PWN by yylevi"
 ENTER
