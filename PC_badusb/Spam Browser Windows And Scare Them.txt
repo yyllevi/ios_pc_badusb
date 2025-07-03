@@ -26,5 +26,5 @@ DELAY 1480
 STRING " More Payloads At "
 ENTER
 DELAY 464
-STRING " https://github.com/biskit-git/ios_pc_badusb "
+STRING " https://github.com/yylevi/ios_pc_badusb "
 ENTER
